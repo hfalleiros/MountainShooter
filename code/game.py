@@ -24,8 +24,9 @@ class Game:
                 print("MENU_OPTION = 4")
                 pygame.quit()
                 quit()
-            if menu_return in [0, 1, 2]:
+            elif menu_return in [0, 1, 2]:
                 print("MENU_OPTION = 0, 1, 2")
                 level = Level(self.window, 'level1', menu_return)
+                level_return = level.run()
             else:
                 pass
